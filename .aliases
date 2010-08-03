@@ -1,0 +1,10 @@
+alias g++45='/opt/local/bin/x86_64-apple-darwin10-g++-mp-4.5'
+alias clisp='rlwrap clisp'
+alias gosh='rlwrap gosh'
+alias al='sl -a'
+alias mecab='rlwrap mecab'
+#alias cpan='rlwrap cpan'
+alias clisp='rlwrap clisp'
+alias modlist=find `perl -e 'print "@INC"'` -name "*.pm" -print
+alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
+
