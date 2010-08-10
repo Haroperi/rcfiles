@@ -5,6 +5,11 @@ alias al='sl -a'
 alias mecab='rlwrap mecab'
 #alias cpan='rlwrap cpan'
 alias clisp='rlwrap clisp'
-alias modlist=find `perl -e 'print "@INC"'` -name "*.pm" -print
+alias cpanmodlist='find `perl -e 'print "@INC"'` -name "*.pm" -print'
 alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
+alias tailf='tail -f'
+
+# for Mac
+alias hibernatemode='sudo pmset -a hibernatemode 1'
+alias sleepmode='sudo pmset -a hibernatemode 3'
 
