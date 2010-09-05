@@ -446,3 +446,6 @@ let sh_minlines = 500
 " set t_ti=
 " set t_te=
 " vim: foldmethod=marker:foldlevel=1
+
+autocmd BufNewFile *.cpp 0r $HOME/.rc/vim/template/template.cpp
+
