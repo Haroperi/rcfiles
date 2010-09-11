@@ -450,4 +450,5 @@ let sh_minlines = 500
 autocmd BufNewFile *.cpp 0r $HOME/.rc/vim/template/template.cpp
 autocmd BufNewFile *.pl 0r $HOME/.rc/vim/template/template.pl
 autocmd BufNewFile *.tex 0r $HOME/.rc/vim/template/template.tex
+autocmd BufNewFile *.c 0r $HOME/.rc/vim/template/template.c
 
