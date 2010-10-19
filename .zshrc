@@ -202,4 +202,6 @@ kterm*|xterm*)
     ;;
 esac
 
+# completation (ignorecase)
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
