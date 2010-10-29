@@ -452,6 +452,8 @@ autocmd BufNewFile *.pl 0r $HOME/.rc/vim/template/template.pl
 autocmd BufNewFile *.tex 0r $HOME/.rc/vim/template/template.tex
 autocmd BufNewFile *.c 0r $HOME/.rc/vim/template/template.c
 autocmd BufNewFile *.html 0r $HOME/.rc/vim/template/template.html
+autocmd BufNewFile *.y 0r $HOME/.rc/vim/template/template.y
+autocmd BufNewFile *.l 0r $HOME/.rc/vim/template/template.l
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
