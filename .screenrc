@@ -1,0 +1,16 @@
+# Author:      Keiya Chinen, keiyac
+# Last Change: 2010/07/29
+escape ^x^x
+autodetach on
+defbce on
+vbell off
+defscrollback 10000
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%{.rW}%n: %t %{-} %=%{..G}%H %{..Y}LoadAvg: %l %0c "
+caption always "%{= wk} %-w%{=bu dr}%n %t%{-}%+w"
+
+defutf8 on
+defkanji utf8
+defencoding utf8
