@@ -14,3 +14,5 @@ alias g++46='g++-mp-4.6 -std=c++0x'
 alias hibernatemode='sudo pmset -a hibernatemode 1'
 alias sleepmode='sudo pmset -a hibernatemode 3'
 
+# gcc 4.6
+PATH=$PATH:~/src/gcc46/install/bin
