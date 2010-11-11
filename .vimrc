@@ -392,12 +392,6 @@ let g:chalice_titlestring=""
 " vimwiki {{{2
 let g:vimwiki_list=[{'path_html': '~/.vim/vimwiki/html/', 'html_footer': '', 'maxhi': 1, 'index': 'index', 'path': '~/.vim/vimwiki/source/', 'gohome': 'split', 'ext': '.wiki', 'folding': 1, 'html_header': '', 'syntax': 'default', 'css_name': 'style.css'}]
 " }}}2
-" twitvim {{{2
-let twitvim_login=""
-" }}}2
-" hatena {{{2
-let g:hatena_user="goth_wrist_cut"
-" }}}2
 " prtdialog {{{2
 let g:prd_prtDeviceList="standard,192.168.10.249,toccata"
 let g:prd_prtDeviceIdx=1
@@ -406,6 +400,13 @@ vmap <Leader>prt <Plug>PRD_PrinterDialogVisual
 " }}}2
 " }}}1
 let g:load_doxygen_syntax=1
+
+"Persistent undoを有効化(7.3)"{{{
+if version >= 703
+	set undofile
+	"アンドゥの保存場所
+	set undodir=$HOME/vim/undo
+endif"}}}
 
 " ファイルタイプ毎の追加オプション {{{1
 " Haskell {{{2
