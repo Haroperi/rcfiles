@@ -3,3 +3,4 @@ rm ~/.vimrc
 rm ~/.screenrc
 rm ~/.zshrc
 rm ~/.aliases
+rm ~/.hgrc
