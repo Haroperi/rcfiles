@@ -1,6 +1,6 @@
 # Author:      Keiya Chinen, keiyac
 # Last Change: 2010/07/29
-escape ^x^x
+escape ^z^z
 autodetach on
 defbce on
 vbell off
