@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 # lastupdate 2009/10/25
 
-#
-# Includes
-#
-source ~/.profile
-source ~/.aliases
-
 # users generic .zshrc file for zsh(1)
 
 # Environment variable configuration
@@ -203,3 +197,8 @@ zstyle ':completion:*' list-colors \
 # completation (ignorecase)
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+#
+# Includes
+#
+source ~/.profile
+source ~/.aliases
