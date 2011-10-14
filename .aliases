@@ -1,4 +1,4 @@
-alias g++45='/opt/local/bin/x86_64-apple-darwin10-g++-mp-4.5'
+#alias g++45='/opt/local/bin/x86_64-apple-darwin10-g++-mp-4.5'
 #alias clisp='rlwrap clisp'
 #alias gosh='rlwrap gosh'
 alias al='sl -a'
@@ -8,11 +8,12 @@ alias al='sl -a'
 alias cpanmodlist='find `perl -e 'print "@INC"'` -name "*.pm" -print'
 alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
 alias tailf='tail -f'
-alias g++46='g++-mp-4.6 -std=c++0x'
+#alias g++46='g++-mp-4.6 -std=c++0x'
 
 # for Mac
 alias hibernatemode='sudo pmset -a hibernatemode 1'
 alias sleepmode='sudo pmset -a hibernatemode 3'
 
-# gcc 4.6
-PATH=$PATH:~/src/gcc46/install/bin
+# coins
+alias socks='ssh -N -f -D localhost:10080 -l s1011425@www.coins.tsukuba.ac.jp'
+
