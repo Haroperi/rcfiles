@@ -10,10 +10,14 @@ alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
 alias tailf='tail -f'
 #alias g++46='g++-mp-4.6 -std=c++0x'
 
+alias koukai="ruby -e 'ARGV.each {|f| /\.(.+)/ =~ f; `mv #{f} #{$1}` if $1 }'"
+alias inpei="ruby -e 'ARGV.each {|f| `mv #{f} .#{f}`}'"
+
 # for Mac
 alias hibernatemode='sudo pmset -a hibernatemode 1'
 alias sleepmode='sudo pmset -a hibernatemode 3'
+alias vim=/usr/local/bin/vim
 
 # coins
-alias socks='ssh -N -f -D localhost:10080 -l s1011425@www.coins.tsukuba.ac.jp'
+alias socks='ssh -N -f -D localhost:10080 -l s1011425 www.coins.tsukuba.ac.jp'
 
