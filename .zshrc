@@ -194,3 +194,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 #
 source ~/.profile
 source ~/.aliases
+
+# gitでエラーが出るので、無効にする
+setopt no_extended_glob
+
