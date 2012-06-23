@@ -198,3 +198,13 @@ source ~/.aliases
 # gitでエラーが出るので、無効にする
 setopt no_extended_glob
 
+# ruby
+case "${TERM}" in
+xterm-color)
+    export RUBYLIB=/Users/haro/work/rubysample:$RUBYLIB
+    ;;
+xterm)
+    export RUBYLIB=/Users/haro/work/rubysample:$RUBYLIB
+    ;;
+esac
+
