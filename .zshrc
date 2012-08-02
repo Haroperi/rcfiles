@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 # lastupdate 2009/10/25
 
-#
-# Includes
-#
-source ~/.profile
-source ~/.aliases
-
 # users generic .zshrc file for zsh(1)
 
 # Environment variable configuration
@@ -194,4 +188,23 @@ zstyle ':completion:*' list-colors \
 
 # completation (ignorecase)
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+#
+# Includes
+#
+source ~/.profile
+source ~/.aliases
+
+# gitでエラーが出るので、無効にする
+setopt no_extended_glob
+
+# ruby
+case "${TERM}" in
+xterm-color)
+    export RUBYLIB=/Users/haro/work/rubysample:$RUBYLIB
+    ;;
+xterm)
+    export RUBYLIB=/Users/haro/work/rubysample:$RUBYLIB
+    ;;
+esac
 

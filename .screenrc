@@ -1,6 +1,7 @@
 # Author:      Keiya Chinen, keiyac
 # Last Change: 2010/07/29
 escape ^z^z
+shell zsh
 autodetach on
 defbce on
 vbell off
