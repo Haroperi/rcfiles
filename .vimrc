@@ -28,7 +28,7 @@ set noerrorbells
 set noexpandtab
 set noinsertmode
 set visualbell
-set backspace=indent,start,eol
+set backspace=indent,eol,start
 set fileformats=unix,dos,mac
 set helplang=en,ja
 set nrformats-=octal
@@ -458,4 +458,9 @@ autocmd BufNewFile *.l 0r $HOME/.rc/vim/template/template.l
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
+
+noremap  
+noremap!  
+"noremap 
+"noremap! 
 
