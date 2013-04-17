@@ -4,7 +4,7 @@ alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
 alias tailf='tail -f'
 
 # for Mac
-if [ $TERM_PROGRAM = "Apple_Terminal" ]; then
+if [ "${TERM_PROGRAM}" = "Apple_Terminal" ]; then
 	alias hibernatemode='sudo pmset -a hibernatemode 1'
 	alias sleepmode='sudo pmset -a hibernatemode 3'
 	alias vim=/usr/local/bin/vim
