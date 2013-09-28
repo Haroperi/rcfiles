@@ -99,6 +99,11 @@ set cinoptions=:0g0
 set copyindent
 set smartindent
 set formatoptions+=nM
+
+" TODO: 言語ごとに設定したい
+set expandtab
+set shiftwidth=2
+set tabstop=2
 " }}}1
 
 " ファイルブラウズ {{{1
@@ -360,12 +365,6 @@ endif
 " autodate {{{2
 let autodate_format="%Y/%m/%d %H:%M:%S"
 " }}}2
-" haskellmode {{{2
-autocmd vimrc Bufenter *.hs compiler ghc
-let g:haddock_browser = "open"
-let g:haddock_browser_callformat = "%s %s"
-let b:ghc_staticoptions = "-Wall"
-" }}}2
 " Align {{{2
 let g:Align_xstrlen = 3
 " }}}2
@@ -448,13 +447,14 @@ let sh_minlines = 500
 " set t_te=
 " vim: foldmethod=marker:foldlevel=1
 
-autocmd BufNewFile *.cpp 0r $HOME/.rc/vim/template/template.cpp
-autocmd BufNewFile *.pl 0r $HOME/.rc/vim/template/template.pl
+" テンプレートファイル"{{{
+"autocmd BufNewFile *.cpp 0r $HOME/.rc/vim/template/template.cpp
+"autocmd BufNewFile *.pl 0r $HOME/.rc/vim/template/template.pl
 autocmd BufNewFile *.tex 0r $HOME/.rc/vim/template/template.tex
-autocmd BufNewFile *.c 0r $HOME/.rc/vim/template/template.c
+"autocmd BufNewFile *.c 0r $HOME/.rc/vim/template/template.c
 autocmd BufNewFile *.html 0r $HOME/.rc/vim/template/template.html
 autocmd BufNewFile *.y 0r $HOME/.rc/vim/template/template.y
-autocmd BufNewFile *.l 0r $HOME/.rc/vim/template/template.l
+autocmd BufNewFile *.l 0r $HOME/.rc/vim/template/template.l"}}}
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
