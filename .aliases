@@ -3,6 +3,7 @@ alias cpanmodlist='find `perl -e 'print "@INC"'` -name "*.pm" -print'
 alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
 alias tailf='tail -f'
 alias v=vim
+alias search='find . -type f 2>/dev/null | xargs grep'
 
 # Boost
 export INCLUDE=/usr/local/Cellar/boost/1.49.0/include:$INCLUDE
@@ -16,6 +17,7 @@ if [ $TERM_PROGRAM = "Apple_Terminal" ]; then
   alias vim=/usr/local/bin/vim
   alias cpptest='cd ~/work/gomi && vim test.cpp'
   alias socks='ssh -N -f -D localhost:10080 -l s1011425 www.coins.tsukuba.ac.jp'
+  alias semi='cd ~/work/report/nowlab/13-semi/ && vim report.tex'
 
   # Ruby
   export RUBYLIB=/Users/haro/work/rubysample:$RUBYLIB
