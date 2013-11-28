@@ -1,4 +1,3 @@
-" Last Change: 2009/10/25 22:20:26.
 scriptencoding utf-8
 syntax on
 filetype plugin on
