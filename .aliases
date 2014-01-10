@@ -1,15 +1,33 @@
 alias al='sl -a'
-alias tailf='tail -f'
 alias v=vim
+alias scr='screen -RR'
 alias search='find . -type f 2>/dev/null | xargs grep'
 alias R='R -q'
+
+# for NLP
+alias tailf='tail -f'
+alias wl='wc -l'
 
 # Boost
 export INCLUDE=/usr/local/Cellar/boost/1.49.0/include:$INCLUDE
 export LIB=/usr/local/Cellar/boost/1.49.0/lib:$LIB
 
-if [ $TERM_PROGRAM = "Apple_Terminal" ]; then
-  # for Mac OS
+# viola
+case $HOSTNAME in
+ viola*)
+	# rvm
+	[[ -s "/home/ugrad/10/s1011425/.rvm/scripts/rvm" ]] && source "/home/ugrad/10/s1011425/.rvm/scripts/rvm"
+	
+	# ruby
+	export RUBYLIB=/home/ugrad/10/s1011425/work/rubysample:$RUBYLIB
+	;;
+esac
+
+# for Mac
+if [ "${TERM_PROGRAM}" = "Apple_Terminal" ]; then
+  # socks proxy (www.coins.tsukuba.ac.jp)
+  alias socks='ssh -N -f -D localhost:10080 -l s1011425 www.coins.tsukuba.ac.jp'
+
   alias hibernatemode='sudo pmset -a hibernatemode 1'
   alias sleepmode='sudo pmset -a hibernatemode 3'
 fi
