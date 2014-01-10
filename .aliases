@@ -1,8 +1,12 @@
 alias al='sl -a'
 alias cpanmodlist='find `perl -e 'print "@INC"'` -name "*.pm" -print'
 alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
-alias tailf='tail -f'
 alias v=vim
+alias scr='screen -RR'
+
+# for NLP
+alias tailf='tail -f'
+alias wl='wc -l'
 
 # Boost
 export INCLUDE=/usr/local/Cellar/boost/1.49.0/include:$INCLUDE
