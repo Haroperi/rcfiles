@@ -3,6 +3,7 @@ alias cpanmodlist='find `perl -e 'print "@INC"'` -name "*.pm" -print'
 alias cpan_modlist="find `perl -e 'print "@INC"'` -name '*.pm' -print"
 alias v=vim
 alias scr='screen -RR'
+alias search='find . -type f 2>/dev/null | xargs grep'
 
 # for NLP
 alias tailf='tail -f'
@@ -12,6 +13,20 @@ alias wl='wc -l'
 export INCLUDE=/usr/local/Cellar/boost/1.49.0/include:$INCLUDE
 export LIB=/usr/local/Cellar/boost/1.49.0/lib:$LIB
 
+# socks proxy (www.coins.tsukuba.ac.jp)
+alias socks='ssh -N -f -D localhost:10080 -l s1011425 www.coins.tsukuba.ac.jp'
+
+# viola
+case $HOSTNAME in
+ viola*)
+	# rvm
+	[[ -s "/home/ugrad/10/s1011425/.rvm/scripts/rvm" ]] && source "/home/ugrad/10/s1011425/.rvm/scripts/rvm"
+	
+	# ruby
+	export RUBYLIB=/home/ugrad/10/s1011425/work/rubysample:$RUBYLIB
+	;;
+esac
+
 # for Mac
 if [ "${TERM_PROGRAM}" = "Apple_Terminal" ]; then
   # command
@@ -20,6 +35,7 @@ if [ "${TERM_PROGRAM}" = "Apple_Terminal" ]; then
   alias vim=/usr/local/bin/vim
   alias cpptest='cd ~/work/gomi && vim test.cpp'
   alias socks='ssh -N -f -D localhost:10080 -l s1011425 www.coins.tsukuba.ac.jp'
+  alias semi='cd ~/work/report/nowlab/13-semi/ && vim report.tex'
 
   # Ruby
   export RUBYLIB=/Users/haro/work/rubysample:$RUBYLIB
